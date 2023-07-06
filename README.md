@@ -75,7 +75,7 @@ Para compilar o programa Java na linha de comando, siga as etapas abaixo:
 
    A seguinte tela será exibida:
 
-![Capturar3](https://github.com/andrefernandeslp1/LP2-Trabalho-U3/assets/92834067/39a83a30-4895-46ae-919e-7b0695be04fe)
+# IMAGEM
 
 Os arquivos serão compilados na estrutura padrão de diretórios de um projeto Java:
 
@@ -89,7 +89,7 @@ OBS: Caso o comando acima não funcione, tente executar o seguinte comando: `jav
 
 O seguinte menu será exibido:
 
-![Capturar](https://github.com/andrefernandeslp1/LP2-Trabalho-U3/assets/92834067/e836f360-f15a-4075-9e6b-37f7dd4089c9)
+# IMAGEM
 
 A partir do menu acima, o usuário iniciará sua jornada pelo SYSCAR - Sistema de Informações para Concessionárias de Automóveis.
 
