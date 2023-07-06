@@ -14,10 +14,8 @@ public class App {
       System.out.println("Instanciando novo objeto loja...");
       System.out.println("Qual o nome da loja?");
       String nomeLoja = input.nextLine();
-      //loja.setNome(nomeLoja);
       System.out.println("Qual o Saldo de Caixa da loja?");
       double saldoCaixa = input.nextDouble();
-      //loja.setCaixa(saldoCaixa);
       input.nextLine();
       loja = new Loja(nomeLoja, saldoCaixa);
     }
