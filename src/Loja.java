@@ -151,6 +151,7 @@ public void adicionarCliente2(Cliente cliente){
 
   // funcionario que está cadastrando
   public void cadastrarCliente() {
+    int count = 0;
     if (this.funcionarios.isEmpty()) {
       System.out.println("\nNão há funcionários cadastrados!");
       return;
@@ -164,32 +165,14 @@ public void adicionarCliente2(Cliente cliente){
           System.out.println("Cargo: " + funcionario.getCargo());
           System.out.println("Cadastrando cliente...");
           funcionario.adicionarCliente(clientes);
-
+          count ++;
           return;
-        } else {
-          System.out.println("Funcionário não encontrado!");
         }
       }
+      if (count == 0) {
+        System.out.println("Funcionário não encontrado!");
+      }
     }
-    /*
-     * System.out.println("Cadastrando cliente...");
-     * System.out.println("Digite o nome do cliente:");
-     * String nome = input.nextLine();
-     * System.out.println("Digite o CPF do cliente:");
-     * String cpf = input.nextLine();
-     * Cliente cliente = new Cliente(nome, cpf);
-     * try{
-     * funcionarios.get(0).adicionarCliente(clientes, cliente);
-     * } catch (IndexOutOfBoundsException e){
-     * System.out.
-     * println("Não há funcionários cadastrados para executar esta operação!");
-     * System.out.println("Cadastre um funcionário e tente novamente.");
-     * return;
-     * }
-     * //funcionarios.get(0).adicionarCliente(clientes, cliente);
-     * System.out.println("Cliente cadastrado com sucesso!");
-     * System.out.println("Número de cadastro: " + cliente.getCadastro());
-     */
   }
 
   public void adicionarFuncionario(Funcionario funcionario) {
