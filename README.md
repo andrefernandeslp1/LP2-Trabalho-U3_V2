@@ -67,11 +67,11 @@ Para compilar o programa Java na linha de comando, siga as etapas abaixo:
 
 3. Abra um prompt de comando ou terminal no seu sistema operacional.
 
-4. Navegue até o diretório raiz do projeto, onde se encontra o arquivo Makefile, e execute o seguinte comando: `make all`
+4. Navegue até o diretório raiz do projeto, onde se encontra o arquivo Makefile, e execute o seguinte comando: **`make all`**
 
    O comando acima irá compilar os arquivos .java e gerar os arquivos .class.
 
-   OBS: Caso o comando acima não funcione, tente executar o seguinte comando: `javac -d bin -cp "lib/*" src/*.java`
+   OBS: Caso o comando acima não funcione, tente executar o seguinte comando: **`javac -d bin -cp "lib/*" src/*.java`**
 
    A seguinte tela será exibida:
 
@@ -83,9 +83,9 @@ Os arquivos serão compilados na estrutura padrão de diretórios de um projeto 
 
 ### 4.2. Execução
 
-Para executar o programa, a partir do diretório raiz do projeto `/` digite `make run` no prompt de comando.
+Para executar o programa, a partir do diretório raiz do projeto `/` digite **`make run`** no prompt de comando.
 
-OBS: Caso o comando acima não funcione, tente executar o seguinte comando: `java -cp "bin;lib/*" App`
+OBS: Caso o comando acima não funcione, tente executar o seguinte comando: **`java -cp "bin;lib/*" App`**
 
 O seguinte menu será exibido:
 
