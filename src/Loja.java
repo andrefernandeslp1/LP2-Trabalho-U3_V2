@@ -23,6 +23,13 @@ public class Loja {
   }
 
   // setters
+  public void setNome(String nome) {
+    this.nome = nome;
+  }
+  public void setCaixa(Double caixa) {
+    this.caixa = caixa;
+  }
+
   //! POLIMORFISMO
   public void abastecerEstoque(Carro carro) {
     this.carros.add(carro);

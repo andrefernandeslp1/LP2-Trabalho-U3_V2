@@ -2,31 +2,23 @@ import java.util.*;
 
 public class App {
 
-  //função para carregar objetos funcionarios
-
   public static void main(String[] args) throws Exception {
     Scanner input = new Scanner(System.in);
-    Loja loja = new Loja("Loja do João", 1000000.00);
-    Carro carro = new Carro(); // CASO PRECISE ACESSAR ALGUM MÉTODO NESTA CLASSE
-    Cliente cliente = new Cliente(); // CASO PRECISE ACESSAR ALGUM MÉTODO NESTA CLASSE
-    Funcionario funcionario = new Funcionario(); // CASO PRECISE ACESSAR ALGUM MÉTODO NESTA CLASSE
-
-
-    // criar uma instância de carro para abastecer o estoque
-    Carro carro1 = new Carro("Fiat", "Uno", "Branco", 2010, "123456789", "Gasolina", 10000.00);
-    loja.abastecerEstoque(carro1);
-    // criar uma instância de funcionário para adicionar ao ArrayList de funcionários
-    Funcionario funcionario1 = new Funcionario("PEDRO", "123456789", "Gerente");
-    loja.adicionarFuncionario(funcionario1);
-    // criar uma instância de cliente para adicionar ao ArrayList de clientes
-    Cliente cliente1 = new Cliente("MARIA", "987654321");
-    loja.adicionarCliente2(cliente1);
+    Loja loja = new Loja();
 
     //carregar objeto loja de arquivo json
     try {
       loja = loja.carregarLoja();
     } catch (Exception e) {
-      System.out.println("Erro ao carregar arquivo!");
+      System.out.println("Erro ao carregar arquivo loja.json!");
+      System.out.println("Instanciando novo objeto loja...");
+      System.out.println("Qual o nome da loja?");
+      String nomeLoja = input.nextLine();
+      loja.setNome(nomeLoja);
+      System.out.println("Qual o Saldo de Caixa da loja?");
+      double saldoCaixa = input.nextDouble();
+      loja.setCaixa(saldoCaixa);
+      input.nextLine();
     }
 
     int opcao1 = 0;
