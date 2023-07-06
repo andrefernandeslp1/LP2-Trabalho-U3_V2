@@ -11,6 +11,7 @@ public class App {
     Cliente cliente = new Cliente(); // CASO PRECISE ACESSAR ALGUM MÉTODO NESTA CLASSE
     Funcionario funcionario = new Funcionario(); // CASO PRECISE ACESSAR ALGUM MÉTODO NESTA CLASSE
 
+
     // criar uma instância de carro para abastecer o estoque
     Carro carro1 = new Carro("Fiat", "Uno", "Branco", 2010, "123456789", "Gasolina", 10000.00);
     loja.abastecerEstoque(carro1);
@@ -20,6 +21,13 @@ public class App {
     // criar uma instância de cliente para adicionar ao ArrayList de clientes
     Cliente cliente1 = new Cliente("MARIA", "987654321");
     loja.adicionarCliente2(cliente1);
+
+    //carregar objeto loja de arquivo json
+    try {
+      loja = loja.carregarLoja();
+    } catch (Exception e) {
+      System.out.println("Erro ao carregar arquivo!");
+    }
 
     int opcao1 = 0;
 

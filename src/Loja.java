@@ -1,8 +1,7 @@
 import java.util.*;
-import java.io.FileWriter;
+import java.io.*;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import java.io.IOException;
 
 public class Loja {
   private String nome;
@@ -422,5 +421,13 @@ public void adicionarCliente2(Cliente cliente){
     FileWriter writer = new FileWriter("loja.json");
     gson.toJson(loja, writer);
     writer.close();
+  }
+
+  // função para carregar objeto loja de arquivo json
+  public Loja carregarLoja() throws IOException {
+    Gson gson = new Gson();
+    BufferedReader br = new BufferedReader(new FileReader("loja.json"));
+    Loja loja = gson.fromJson(br, Loja.class);
+    return loja;
   }
 }

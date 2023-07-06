@@ -3,15 +3,6 @@
   "caixa": 1000000.0,
   "carros": [
     {
-      "marca": "Fiat",
-      "modelo": "Uno",
-      "cor": "Branco",
-      "ano": 2010,
-      "chassi": "123456789",
-      "combustivel": "Gasolina",
-      "preco": 10000.0
-    },
-    {
       "marca": "fiat",
       "modelo": "pulse",
       "cor": "cinza",
@@ -63,6 +54,12 @@
       "carrosComprados": [],
       "nome": "MARIA",
       "cpf": "987654321"
+    },
+    {
+      "cadastro": "AUS111",
+      "carrosComprados": [],
+      "nome": "AUSGUSTO",
+      "cpf": "11122233344"
     }
   ],
   "funcionarios": [
@@ -71,6 +68,12 @@
       "cargo": "Gerente",
       "nome": "PEDRO",
       "cpf": "123456789"
+    },
+    {
+      "matricula": "123VEN",
+      "cargo": "VENDEDOR",
+      "nome": "JOAO",
+      "cpf": "12312312312"
     }
   ]
 }
