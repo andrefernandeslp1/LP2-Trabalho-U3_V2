@@ -14,16 +14,19 @@ public class App {
       System.out.println("Instanciando novo objeto loja...");
       System.out.println("Qual o nome da loja?");
       String nomeLoja = input.nextLine();
-      loja.setNome(nomeLoja);
+      //loja.setNome(nomeLoja);
       System.out.println("Qual o Saldo de Caixa da loja?");
       double saldoCaixa = input.nextDouble();
-      loja.setCaixa(saldoCaixa);
+      //loja.setCaixa(saldoCaixa);
       input.nextLine();
+      loja = new Loja(nomeLoja, saldoCaixa);
     }
 
     int opcao1 = 0;
 
     System.out.println("\nBem vindo ao SYSCAR! Sistema de Informações para Concessionárias de Automóveis");
+    System.out.println("Nome: " + loja.getNome());
+    System.out.println("Saldo de Caixa: " + loja.getCaixa());
 
     do {
       opcao1 = 0;

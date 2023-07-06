@@ -1,79 +1,14 @@
 {
-  "nome": "Loja do João",
+  "nome": "JoCar",
   "caixa": 1000000.0,
-  "carros": [
-    {
-      "marca": "fiat",
-      "modelo": "pulse",
-      "cor": "cinza",
-      "ano": 2020,
-      "chassi": "WOO81597242828477",
-      "combustivel": "flex",
-      "preco": 150000.0
-    },
-    {
-      "marca": "fiat",
-      "modelo": "pulse",
-      "cor": "cinza",
-      "ano": 2020,
-      "chassi": "DYF80906642493579",
-      "combustivel": "flex",
-      "preco": 150000.0
-    },
-    {
-      "marca": "fiat",
-      "modelo": "pulse",
-      "cor": "cinza",
-      "ano": 2020,
-      "chassi": "XGQ08413992353649",
-      "combustivel": "flex",
-      "preco": 150000.0
-    },
-    {
-      "marca": "fiat",
-      "modelo": "pulse",
-      "cor": "cinza",
-      "ano": 2020,
-      "chassi": "XHK18464971683523",
-      "combustivel": "flex",
-      "preco": 150000.0
-    },
-    {
-      "marca": "fiat",
-      "modelo": "pulse",
-      "cor": "cinza",
-      "ano": 2020,
-      "chassi": "DMI93717091988146",
-      "combustivel": "flex",
-      "preco": 150000.0
-    }
-  ],
-  "clientes": [
-    {
-      "cadastro": "MAR987",
-      "carrosComprados": [],
-      "nome": "MARIA",
-      "cpf": "987654321"
-    },
-    {
-      "cadastro": "AUS111",
-      "carrosComprados": [],
-      "nome": "AUSGUSTO",
-      "cpf": "11122233344"
-    }
-  ],
+  "carros": [],
+  "clientes": [],
   "funcionarios": [
     {
-      "matricula": "123Ger",
+      "matricula": "000Ger",
       "cargo": "Gerente",
-      "nome": "PEDRO",
-      "cpf": "123456789"
-    },
-    {
-      "matricula": "123VEN",
-      "cargo": "VENDEDOR",
-      "nome": "JOAO",
-      "cpf": "12312312312"
+      "nome": "andre",
+      "cpf": "00011122233"
     }
   ]
 }
