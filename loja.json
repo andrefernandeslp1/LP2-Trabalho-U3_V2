@@ -20,12 +20,5 @@
       "cpf": "987654321"
     }
   ],
-  "funcionarios": [
-    {
-      "matricula": "123Ger",
-      "cargo": "Gerente",
-      "nome": "PEDRO",
-      "cpf": "123456789"
-    }
-  ]
+  "funcionarios": []
 }
