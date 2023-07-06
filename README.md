@@ -75,7 +75,7 @@ Para compilar o programa Java na linha de comando, siga as etapas abaixo:
 
    A seguinte tela será exibida:
 
-# IMAGEM
+# #IMAGEM
 
 Os arquivos serão compilados na estrutura padrão de diretórios de um projeto Java:
 
@@ -89,7 +89,7 @@ OBS: Caso o comando acima não funcione, tente executar o seguinte comando: `jav
 
 O seguinte menu será exibido:
 
-# IMAGEM
+# #IMAGEM
 
 A partir do menu acima, o usuário iniciará sua jornada pelo SYSCAR - Sistema de Informações para Concessionárias de Automóveis.
 
