@@ -33,7 +33,7 @@ public class App {
       System.out.println("\nEscolha uma opção:");
       System.out.println("1 - Recursos Humanos");
       System.out.println("2 - Clientes");
-      System.out.println("3 - Abastecimento e Venda");
+      System.out.println("3 - Abastecimento, Compra e Venda de Veículos");
       System.out.println("4 - Estoque");
       System.out.println("5 - Sair");
 
@@ -105,6 +105,7 @@ public class App {
             System.out.println("  1 - Cadastrar Cliente");
             System.out.println("  2 - Consultar Cliente");
             System.out.println("  3 - Listar Clientes");
+            System.out.println("  ? - Excluir Cliente ***IMPLEMENTAR***");
             System.out.println("  4 - Voltar");
 
             try {
@@ -148,8 +149,10 @@ public class App {
           do{
             System.out.println("\n  Abastecimento e Venda");
             System.out.println("  Escolha uma opção:");
-            System.out.println("  1 - Abastecer Estoque");
+            System.out.println("  1 - Abastecer Estoque (Fábrica)");
             System.out.println("  2 - Vender Carro");
+            System.out.println("  ? - Devolver Carro (Fábrica) ***IMPLEMENTAR***");
+            System.out.println("  ? - Comprar Carro ***IMPLEMENTAR***");
             System.out.println("  3 - Voltar");
 
             try {
@@ -189,6 +192,7 @@ public class App {
           System.out.println("  Escolha uma opção:");
           System.out.println("  1 - Consultar Carro");
           System.out.println("  2 - Listar Carros");
+          System.out.println("  ? - Zerar Estoque ***IMPLEMENTAR***");
           System.out.println("  3 - Voltar");
 
           try {
