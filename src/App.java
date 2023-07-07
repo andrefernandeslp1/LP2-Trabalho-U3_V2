@@ -33,7 +33,7 @@ public class App {
       System.out.println("\nEscolha uma opção:");
       System.out.println("1 - Recursos Humanos");
       System.out.println("2 - Clientes");
-      System.out.println("3 - Abastecimento, Compra e Venda de Veículos");
+      System.out.println("3 - Abastecimento de Estoque e Venda de Veículos");
       System.out.println("4 - Estoque");
       System.out.println("5 - Sair");
 
@@ -105,8 +105,8 @@ public class App {
             System.out.println("  1 - Cadastrar Cliente");
             System.out.println("  2 - Consultar Cliente");
             System.out.println("  3 - Listar Clientes");
-            System.out.println("  ? - Excluir Cliente ***IMPLEMENTAR***");
-            System.out.println("  4 - Voltar");
+            System.out.println("  4 - Listar Clientes VIP");
+            System.out.println("  5 - Voltar");
 
             try {
               opcao2 = input.nextInt();
@@ -133,7 +133,12 @@ public class App {
                 loja.listarClientes();
                 break;
 
-              case 4: // sair
+              case 4: // clientes VIP
+                System.out.println("Listar Clientes VIP");
+                loja.listarClientesVIP();
+                break;
+
+              case 5: // sair
                 System.out.println("Saindo...");
                 break;
 
@@ -141,7 +146,7 @@ public class App {
                 System.out.println("Opção inválida!");
                 break;
             }
-          } while (opcao2 != 4);
+          } while (opcao2 != 5);
           break;
 
         case 3: // ABASTECIMENTO E VENDA
@@ -152,7 +157,6 @@ public class App {
             System.out.println("  1 - Abastecer Estoque (Fábrica)");
             System.out.println("  2 - Vender Carro");
             System.out.println("  ? - Devolver Carro (Fábrica) ***IMPLEMENTAR***");
-            System.out.println("  ? - Comprar Carro ***IMPLEMENTAR***");
             System.out.println("  3 - Voltar");
 
             try {

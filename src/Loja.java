@@ -9,6 +9,7 @@ public class Loja {
   private ArrayList<Carro> carros;
   private ArrayList<Cliente> clientes;
   private ArrayList<Funcionario> funcionarios;
+  private Map<String, Cliente> clientesVIP = new HashMap<String, Cliente>();
   private transient Scanner input = new Scanner(System.in);
 
   public Loja() {
@@ -20,6 +21,7 @@ public class Loja {
     this.carros = new ArrayList<Carro>();
     this.clientes = new ArrayList<Cliente>();
     this.funcionarios = new ArrayList<Funcionario>();
+    this.clientesVIP = new HashMap<String, Cliente>();
   }
 
   // setters
@@ -121,6 +123,8 @@ public class Loja {
               this.carros.remove(carro);
               this.caixa += carro.getPreco();
               System.out.println("Carro vendido com sucesso!");
+              adicionarClienteVIP(cliente);
+              System.out.println("Cliente adicionado ao programa de fidelidade Clientes VIP!");
               return;
             }
           }
@@ -247,6 +251,32 @@ public void adicionarCliente2(Cliente cliente){
     return chassi;
   }
 
+  // listar clientes vip
+  public void listarClientesVIP() {
+    if (this.clientesVIP.isEmpty()) {
+      System.out.println("\nNão há clientes VIP cadastrados!");
+      return;
+    } else {
+      System.out.println("\nListando clientes VIP...");
+      for (Map.Entry<String, Cliente> entry : this.clientesVIP.entrySet()) {
+        System.out.println("\nNome: " + entry.getValue().getNome());
+        System.out.println("CPF: " + entry.getValue().getCpf());
+        System.out.println("Cadastro: " + entry.getValue().getCadastro());
+        System.out.println("Carros comprados: ");
+        listarCarrosCliente(entry.getValue());
+      }
+    }
+  }
+
+  // consultar cliente vip
+  public void verificarClienteVIP(String cpf) {
+    if(this.clientesVIP.containsKey(cpf)){
+      System.out.println("Cliente VIP! \u2605");
+    } else {
+      System.out.println("Cliente não VIP!");
+    }
+  }
+
   // usar na classe estoque.
   public void listarCarros() {
     if (this.carros.isEmpty()) {
@@ -280,6 +310,7 @@ public void adicionarCliente2(Cliente cliente){
         System.out.println("CPF: " + cliente.getCpf());
         System.out.println("Cadastro: " + cliente.getCadastro());
         System.out.println("Carros comprados: ");
+        verificarClienteVIP(cliente.getCpf());
         // tem que por uma verificação pra conferir se o cliente possui carro ou não
         listarCarrosCliente(cliente);
       }
@@ -319,6 +350,7 @@ public void adicionarCliente2(Cliente cliente){
             System.out.println("Cadastro: " + cliente.getCadastro());
             System.out.println("CPF: " + cliente.getCpf());
             //System.out.println("");
+            verificarClienteVIP(cliente.getCpf());
             listarCarrosCliente(cliente);
             return;
           }
@@ -423,6 +455,15 @@ public void adicionarCliente2(Cliente cliente){
   }
   */
 
+  public void adicionarClienteVIP(Cliente cliente) {
+    this.clientesVIP.put(cliente.getCpf(), cliente);
+  }
+
+  public void removerClienteVIP(String cpf) {
+    this.clientesVIP.remove(cpf);
+  }
+
+  // função para salvar objeto loja em arquivo json
   public void salvarLoja(Loja loja) throws IOException {
     Gson gson = new GsonBuilder().setPrettyPrinting().create();
     FileWriter writer = new FileWriter("loja.json");
