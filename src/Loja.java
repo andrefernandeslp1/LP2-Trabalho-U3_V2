@@ -271,7 +271,7 @@ public void adicionarCliente2(Cliente cliente){
   // consultar cliente vip
   public void verificarClienteVIP(String cpf) {
     if(this.clientesVIP.containsKey(cpf)){
-      System.out.println("Cliente VIP! \u2605");
+      System.out.println("Cliente VIP!!! *****");
     } else {
       System.out.println("Cliente não VIP!");
     }
