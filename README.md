@@ -79,7 +79,7 @@ Para compilar o programa Java na linha de comando, siga as etapas abaixo:
 
 Os arquivos serão compilados na estrutura padrão de diretórios de um projeto Java:
 
-![Capturar2](https://github.com/andrefernandeslp1/LP2-Trabalho-U3/assets/92834067/5c67385d-e14c-498a-b6f3-1a69d157b5ca)
+![image](https://github.com/andrefernandeslp1/LP2-Trabalho-U3_V2/assets/92834067/d724a7ec-0ea7-46f1-96a3-91c219993b2b)
 
 ### 4.2. Execução
 
